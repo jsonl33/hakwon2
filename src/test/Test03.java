@@ -18,5 +18,11 @@ public class Test03 {
 		Tv03 t1 = new Tv03();
 		Tv03 t2 = new Tv03();
 		System.out.println("tv01채널번호="+t1.channel+", tv02채널번호="+t2.channel);
+		t1.channel = 10;
+		System.out.println("tv01채널번호="+t1.channel);
+		t2 = t1;
+		System.out.println("tv02채널번호="+t2.channel);
+		t1.channel = 20;
+		System.out.println("tv01채널번호="+t1.channel+", tv02채널번호="+t2.channel);
 	}
 }
